@@ -208,6 +208,17 @@ body {
     font-size: 1.1rem;
 }
 
+.footer {
+    background: var(--preto);
+    color: var(--branco);
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .footer-buttons {
     margin: 25px 0 30px;
     display: flex;
@@ -226,12 +237,12 @@ body {
     background: var(--dourado);
     color: var(--preto);
     text-decoration: none;
-    transition: 
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition:
         transform 0.35s ease,
         background 0.35s ease,
         color 0.35s ease,
         box-shadow 0.35s ease;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
 .footer-btn svg {
@@ -246,25 +257,6 @@ body {
     box-shadow: 0 12px 28px rgba(0,0,0,0.25);
 }
 
-
-/* WHATSAPP */
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25d366;
-    color: white;
-    font-size: 28px;
-    padding: 15px 18px;
-    border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: transform 0.3s;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
-}
 
 /* ANIMAÇÃO HERO */
 @keyframes fadeIn {
