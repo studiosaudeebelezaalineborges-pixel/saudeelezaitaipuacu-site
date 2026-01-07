@@ -242,13 +242,28 @@ body {
 .footer-btn svg {
     width: 24px;
     height: 24px;
-    color: var(--preto);
+    color: #4b2e2a; /* marrom café */
+}
+
+.footer-btn:hover svg {
+    color: var(--dourado); /* mantém dourado no hover */
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--dourado);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease, color 0.35s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
 .footer-btn:hover {
     transform: translateY(-3px) scale(1.15);
     background: var(--marrom);
-    color: var(--dourado);
     box-shadow: 0 12px 28px rgba(0,0,0,0.25);
 }
 
