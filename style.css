@@ -209,7 +209,7 @@ body {
 }
 
 .footer-buttons {
-    margin: 15px 0;
+    margin: 15px 0 25px 0;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -219,29 +219,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    background: var(--dourado);
+    color: var(--preto);
     text-decoration: none;
-    font-size: 22px;
-    color: var(--branco);
     transition: transform 0.3s, background 0.3s;
 }
 
-.footer-btn.instagram {
-    background: #E1306C; /* Rosa Instagram */
-}
-
-.footer-btn.maps {
-    background: #4285F4; /* Azul Google Maps */
-}
-
-.footer-btn.whatsapp {
-    background: #25D366; /* Verde WhatsApp */
+.footer-btn svg {
+    width: 22px;
+    height: 22px;
 }
 
 .footer-btn:hover {
     transform: scale(1.2);
+    background: var(--marrom);
+    color: var(--dourado);
 }
 
 /* WHATSAPP */
