@@ -235,28 +235,26 @@ body {
     height: 52px;
     border-radius: 50%;
     background: var(--dourado);
-    color: var(--preto);
-    text-decoration: none;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
     box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    transition:
-        transform 0.35s ease,
-        background 0.35s ease,
-        color 0.35s ease,
-        box-shadow 0.35s ease;
+    overflow: hidden;
 }
 
-.footer-btn svg {
-    width: 22px;
-    height: 22px;
+.footer-btn img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .footer-btn:hover {
     transform: translateY(-3px) scale(1.15);
-    background: var(--marrom);
-    color: var(--dourado);
     box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+    background: var(--marrom);
 }
 
+.footer p {
+    margin: 5px 0;
+}
 
 /* ANIMAÇÃO HERO */
 @keyframes fadeIn {
