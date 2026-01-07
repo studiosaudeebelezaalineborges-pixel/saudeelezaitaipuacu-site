@@ -1,86 +1,173 @@
+:root {
+    --preto: #1c1c1c;
+    --marrom: #2a1f1a;
+    --dourado: #c6a75e;
+    --bege: #f4efe9;
+    --branco: #ffffff;
+    --cinza: #444;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background: #fafafa;
-    color: #333;
-    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+    background: var(--bege);
+    color: var(--cinza);
+    line-height: 1.7;
 }
 
-header {
-    background: linear-gradient(135deg, #c89fa3, #e6c6c9);
-    color: white;
+/* HEADER */
+.header {
     text-align: center;
     padding: 40px 20px;
+    background: var(--preto);
+    color: var(--branco);
 }
 
-nav {
-    background: #fff;
+/* NAV */
+.nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     padding: 15px;
+    background: var(--branco);
 }
 
-nav a {
+.nav a {
     text-decoration: none;
-    color: #c89fa3;
-    font-weight: bold;
+    color: var(--marrom);
+    font-weight: 500;
 }
 
+/* HERO */
 .hero {
-    background: #fff;
+    position: relative;
+    background: url("images/hero.jpg") center/cover no-repeat;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 60px 20px;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(28,28,28,0.55);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+    color: var(--branco);
 }
 
 .hero h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    margin-bottom: 20px;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    background: #c89fa3;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
+.hero p {
+    margin-bottom: 30px;
+}
+
+/* BOTÕES */
+.btn-primary {
+    background: var(--dourado);
+    color: var(--preto);
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.btn-secondary {
+    border: 1px solid var(--dourado);
+    color: var(--dourado);
+    padding: 14px 32px;
+    border-radius: 30px;
     text-decoration: none;
 }
 
-section {
-    padding: 50px 20px;
-    max-width: 1000px;
-    margin: auto;
+/* SEÇÕES */
+.section {
+    padding: 80px 20px;
 }
 
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+/* DIREÇÃO */
+.direcao-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.direcao-foto img {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.localizacao {
+    font-weight: 500;
+    color: var(--marrom);
+}
+
+/* SERVIÇOS */
 .cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
 }
 
 .card {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 1;
-    min-width: 250px;
-}
-
-footer {
-    background: #333;
-    color: white;
+    background: var(--branco);
+    padding: 30px;
+    border-radius: 18px;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    background: var(--marrom);
+    color: var(--branco);
+    padding: 80px 20px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    background: var(--preto);
+    color: var(--branco);
+    padding: 30px 20px;
+}
+
+/* WHATSAPP */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -92,4 +179,12 @@ footer {
     border-radius: 50%;
     text-decoration: none;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .direcao-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
 }
