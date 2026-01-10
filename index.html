@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Aline Borges</title>
+
+    <title>Studio Saúde & Beleza | Aline Borges</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- HEADER -->
 <header class="header">
-    <div class="logo">Aline Borges</div>
+    <div class="logo">Studio Saúde & Beleza</div>
+
     <nav class="nav">
         <a href="#hero">Início</a>
-        <a href="#direcao">Direção Técnica</a>
+        <a href="#direcao">Direção</a>
         <a href="#nails">Nails & Estética</a>
         <a href="#servicos">Serviços</a>
         <a href="#contato">Contato</a>
@@ -21,24 +31,108 @@
 
 <!-- HERO -->
 <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+
     <div class="hero-content">
-        <h1>Beleza, Saúde e Identidade</h1>
-        <p>Cuidado estético com excelência, técnica e propósito.</p>
+        <h1>Estética, Saúde e Beleza</h1>
+        <p>Com assinatura de excelência, técnica e propósito</p>
         <button id="heroButton">Agendar Atendimento</button>
     </div>
 </section>
 
 <!-- DIREÇÃO TÉCNICA -->
 <section id="direcao" class="section">
-    <div class="direcao-container">
-        <div class="direcao-foto">
-            <img src="images/aline.jpg" alt="Aline Borges">
+    <div class="container perfil">
+        <img src="images/aline.jpg" alt="Aline Borges">
+
+        <div class="perfil-texto">
+            <h2>Direção Técnica</h2>
+            <span class="profissional">Aline Borges</span>
+
+            <p>
+                Especialista em estética, saúde capilar e tratamentos avançados.
+                Atua com foco em resultados reais, cuidado individualizado
+                e atendimento humanizado.
+            </p>
         </div>
-        <div class="direcao-texto">
+    </div>
+</section>
+
+<!-- NAILS DESIGNER -->
+<section id="nails" class="section section-clara">
+    <div class="container perfil">
+        <img src="images/thamirys.jpg" alt="Thamirys">
+
+        <div class="perfil-texto">
+            <h2>Nails Designer & Estética</h2>
+            <span class="profissional">Thamirys</span>
+
+            <p>
+                Profissional especializada em unhas, estética facial
+                e cuidados completos, unindo técnica, higiene e sofisticação.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="section">
+    <h2 class="titulo-central">Serviços</h2>
+
+    <div class="cards">
+
+        <!-- CAPILAR -->
+        <div class="card">Cronograma Capilar</div>
+        <div class="card">Soltura de Cachos</div>
+        <div class="card">Progressiva</div>
+        <div class="card">Coloração</div>
+        <div class="card">Tratamentos para Queda e Alopecia</div>
+        <div class="card">Ozonioterapia Capilar</div>
+
+        <!-- ESTÉTICA -->
+        <div class="card">Limpeza de Pele</div>
+        <div class="card">Estética Facial</div>
+        <div class="card">Ozonioterapia Facial</div>
+        <div class="card">Extração de Cravos</div>
+
+        <!-- NAILS & DESIGN -->
+        <div class="card destaque">Manicure e Pedicure</div>
+        <div class="card destaque">Nails Design (Alongamento)</div>
+        <div class="card destaque">Lash Design (Cílios)</div>
+        <div class="card destaque">Hidragloss Lips</div>
+        <div class="card destaque">Rena Labial</div>
+        <div class="card destaque">Design de Sobrancelha</div>
+        <div class="card destaque">Spa dos Pés</div>
+
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="section contato">
+    <h2>Agende seu horário</h2>
+    <p>Atendimento em Jardim Atlântico Leste – Itaipuaçu / Maricá – RJ</p>
+
+    <a
+        href="https://wa.me/5521973211942"
+        target="_blank"
+        class="botao-whatsapp">
+        Falar no WhatsApp
+    </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Studio Saúde & Beleza — Aline Borges</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>        <div class="direcao-texto">
             <h2>Direção Técnica</h2>
             <p class="profissional">Aline Borges</p>
             <p>
-                Especialista em estética e saúde capilar, Aline Borges atua com
+                Especialista em estética e saúde capilar, Aline Borges — especializada em Terapia Capilar — atua com
                 técnicas avançadas, atendimento humanizado e foco no bem-estar
                 integral de cada cliente.
             </p>
@@ -50,7 +144,7 @@
 <section id="nails" class="section nails">
     <div class="direcao-container">
         <div class="direcao-foto">
-            <img src="images/thamirys.jpg" alt="Thamirys">
+            <img src="IMG-20260110-WA0006.jpg" alt="Thamirys">
         </div>
         <div class="direcao-texto">
             <h2>Nails Designer & Estética</h2>
@@ -91,7 +185,7 @@
 <!-- CONTATO -->
 <section id="contato" class="section contato">
     <h2>Agende seu horário</h2>
-    <a href="https://wa.me/5500000000000" target="_blank" class="btn">
+    <a href="https://wa.me/5521973211942" target="_blank" class="btn">
         WhatsApp
     </a>
 </section>
