@@ -1,38 +1,42 @@
-// ===== Hero Button Interativo =====
+// BOTÃO HERO → CONTATO
 const heroButton = document.getElementById('heroButton');
 
 if (heroButton) {
     heroButton.addEventListener('click', () => {
-        alert('Bem-vindo(a) ao site da Aline Borges!');
+        document.getElementById('contato').scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 }
 
-// ===== Scroll suave para links do menu =====
+// SCROLL SUAVE MENU
 const navLinks = document.querySelectorAll('.nav a');
 
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
 
-        if (targetSection) {
+        const id = link.getAttribute('href').replace('#', '');
+        const section = document.getElementById(id);
+
+        if (section) {
             window.scrollTo({
-                top: targetSection.offsetTop - 70,
+                top: section.offsetTop - 90,
                 behavior: 'smooth'
             });
         }
     });
 });
 
-// ===== Animação de destaque para cards =====
+// ANIMAÇÃO CARDS
 const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
     card.addEventListener('mouseenter', () => {
-        card.style.transform = 'translateY(-8px) scale(1.02)';
+        card.style.transform = 'translateY(-8px)';
     });
+
     card.addEventListener('mouseleave', () => {
-        card.style.transform = 'translateY(0) scale(1)';
+        card.style.transform = 'translateY(0)';
     });
 });
