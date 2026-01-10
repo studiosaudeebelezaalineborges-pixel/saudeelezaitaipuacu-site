@@ -2,74 +2,71 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Studio Saúde & Beleza | Aline Borges</title>
-    <meta name="description" content="Estética, saúde e beleza com assinatura de excelência. Atendimento humanizado em Itaipuaçu – Maricá.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
+    <title>Studio Aline Borges</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/5521973211942" class="whatsapp-float" target="_blank" aria-label="Fale no WhatsApp">💬</a>
-
-<!-- HEADER -->
 <header class="header">
-    <h1>Studio Saúde & Beleza</h1>
-    <p>Aline Borges</p>
+    <div class="logo">Aline Borges</div>
+    <nav class="nav">
+        <a href="#hero">Início</a>
+        <a href="#direcao">Direção Técnica</a>
+        <a href="#nails">Nails & Estética</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
 </header>
-
-<!-- NAV -->
-<nav class="nav">
-    <a href="#hero">Início</a>
-    <a href="#direcao">Direção</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#contato">Contato</a>
-</nav>
 
 <!-- HERO -->
 <section id="hero" class="hero">
-    <div class="hero-overlay"></div>
     <div class="hero-content">
-        <h2>Estética, saúde e beleza com assinatura de excelência e propósito</h2>
-        <p>Experiências personalizadas que unem técnica, cuidado e sofisticação.</p>
-        <div class="hero-buttons">
-            <a href="https://wa.me/5521973211942" class="btn-primary" id="heroButton">Agendar agora</a>
-            <a href="https://wa.me/5521973211942" class="btn-secondary">Falar no WhatsApp</a>
+        <h1>Beleza, Saúde e Identidade</h1>
+        <p>Cuidado estético com excelência, técnica e propósito.</p>
+        <button id="heroButton">Agendar Atendimento</button>
+    </div>
+</section>
+
+<!-- DIREÇÃO TÉCNICA -->
+<section id="direcao" class="section">
+    <div class="direcao-container">
+        <div class="direcao-foto">
+            <img src="images/aline.jpg" alt="Aline Borges">
+        </div>
+        <div class="direcao-texto">
+            <h2>Direção Técnica</h2>
+            <p class="profissional">Aline Borges</p>
+            <p>
+                Especialista em estética e saúde capilar, Aline Borges atua com
+                técnicas avançadas, atendimento humanizado e foco no bem-estar
+                integral de cada cliente.
+            </p>
         </div>
     </div>
 </section>
 
-<!-- DIREÇÃO -->
-<section id="direcao" class="section direcao">
+<!-- NAILS DESIGNER -->
+<section id="nails" class="section nails">
     <div class="direcao-container">
         <div class="direcao-foto">
-            <img src="images/aline.jpeg" alt="Aline Borges – Direção Técnica" loading="lazy">
+            <img src="images/thamirys.jpg" alt="Thamirys">
         </div>
         <div class="direcao-texto">
-            <h2>Direção Técnica – Aline Borges</h2>
+            <h2>Nails Designer & Estética</h2>
+            <p class="profissional">Thamirys</p>
             <p>
-                À frente do Studio Saúde & Beleza, Aline Borges especializada em Terapia Capilar, une conhecimento técnico,
-                sensibilidade estética e compromisso com a saúde integral. 
-            </p>
-            <p>
-                Cada atendimento é pensado de forma personalizada, respeitando a
-                individualidade, a história e a beleza única de cada cliente.
-            </p>
-            <p class="localizacao">
-                Jardim Atlântico Leste – Itaipuaçu / Maricá – RJ
+                Profissional especializada em unhas, estética facial e cuidados
+                personalizados, unindo técnica, higiene rigorosa e resultados elegantes.
             </p>
         </div>
     </div>
 </section>
 
 <!-- SERVIÇOS -->
-<section id="servicos" class="section servicos">
-    <h2 class="section-title">Serviços</h2>
+<section id="servicos" class="section">
+    <h2 class="center">Serviços</h2>
+
     <div class="cards">
         <div class="card">Cronograma Capilar</div>
         <div class="card">Soltura de Cachos</div>
@@ -77,19 +74,26 @@
         <div class="card">Coloração</div>
         <div class="card">Ozonioterapia Capilar</div>
         <div class="card">Ozonioterapia Facial</div>
+        <div class="card">Tratamento Anti Queda</div>
         <div class="card">Limpeza de Pele</div>
         <div class="card">Estética Facial</div>
-        <div class="card">Sobrancelhas</div>
-        <div class="card">Extração de Cravos</div>
-        <div class="card">Tratamento Anti Queda , Alopécia e Dermatite...</div>
-        <div class="card">E Muito Mais</div>
+
+        <div class="card destaque">Manicure & Pedicure</div>
+        <div class="card destaque">Nails Design (Alongamento)</div>
+        <div class="card destaque">Lash Design (Cílios)</div>
+        <div class="card destaque">Hidragloss Lips</div>
+        <div class="card destaque">Rena Labial</div>
+        <div class="card destaque">Design de Sobrancelha</div>
+        <div class="card destaque">Spa dos Pés</div>
     </div>
 </section>
 
-<!-- CTA FINAL -->
-<section id="contato" class="cta">
-    <h2>Agende seu horário e viva uma experiência de cuidado e excelência</h2>
-    <a href="https://wa.me/5521973211942" class="btn-primary">Agendar agora</a>
+<!-- CONTATO -->
+<section id="contato" class="section contato">
+    <h2>Agende seu horário</h2>
+    <a href="https://wa.me/5500000000000" target="_blank" class="btn">
+        WhatsApp
+    </a>
 </section>
 
 <!-- FOOTER -->
