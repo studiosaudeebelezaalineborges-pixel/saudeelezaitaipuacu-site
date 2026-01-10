@@ -66,16 +66,16 @@ body {
     max-width: 600px;
 }
 
-.hero-content h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    margin-bottom: 20px;
+.hero h1,
+.hero p {
+  color: var(--bege);
 }
 
-.hero-content p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+
+.hero-content{
+  background:rgba(255,255,255,0.75);
 }
+
 
 .hero-content button {
     padding: 14px 36px;
