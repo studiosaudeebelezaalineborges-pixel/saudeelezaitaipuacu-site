@@ -61,14 +61,14 @@ body {
 
 .hero-content {
     position: relative;
-    color: #ffb;
+    color: var(--bege);
     text-align: center;
     max-width: 600px;
 }
 
-.hero h1,
-.hero p {
-  color: var(--bege);
+.hero-content h1,
+.hero-content p {
+    color: var(--bege);
 }
 
 
